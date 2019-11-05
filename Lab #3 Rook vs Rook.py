@@ -15,7 +15,7 @@ t = 0  # number of tries
 a = 0  # attack success
 stalemate = 0
 
-while t < 100000:
+while t < 1000000:
     r1 = math.floor(8 * random.random()) + 1  # Rook-1 row
     c1 = math.floor(8 * random.random()) + 1  # Rook-1 column
     r2 = math.floor(8 * random.random()) + 1  # Rook-2 row
