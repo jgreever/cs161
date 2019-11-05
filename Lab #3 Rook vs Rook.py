@@ -13,6 +13,7 @@ import math
 
 t = 0  # number of tries
 a = 0  # attack success
+stalemate = 0
 
 while t < 100000:
     r1 = math.floor(8 * random.random()) + 1  # Rook-1 row
@@ -26,7 +27,9 @@ while t < 100000:
     if r1 == r2 and c1 == c2:  # Same column and row, consider it a failure since its the same location
         a = a - 1
         t = t - 1
-
+        stalemate = stalemate + 1
+    
     t = t + 1  # add one to the trials after a successful roll/attack
 
 print("Probability of two rooks being able to attack after being randomly placed on the board is: ", a / t)
+print("Stalemate plays: ", stalemate)
