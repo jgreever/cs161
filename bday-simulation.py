@@ -35,7 +35,7 @@ while(c < 10000) :
 			success = success + 1
 		k = k+1
 
-c = c+1
+	c = c+1
 
 print("The probability that in a class of ", end="")
 print(x , end="")
