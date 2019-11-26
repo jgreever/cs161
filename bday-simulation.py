@@ -7,8 +7,8 @@ import random
 ft = []
 k = 0
 while(k < 365) :
-    ft.append(0)
-    k = k+1
+	ft.append(0)
+	k = k+1
 
 print("Please type in how many people are in the class: ")
 x = int(input())
@@ -17,23 +17,23 @@ success = 0
 
 c = 0
 while(c < 10000) :
-    k = 0
-    while(k < 365) :
-        ft[k] = 0
-        k = k+1
+	k = 0
+	while(k < 365) :
+		ft[k] = 0
+		k = k+1
 
-k = 0
-while(k < x):
-    b = math.floor(365*random.random())+1
-    ft[b] = ft[b] + 1
-    k = k+1
+	k = 0
+	while(k < x):
+		b = math.floor(364*random.random())+1
+		ft[b] = ft[b] + 1
+		k = k+1
 
-k = 0
-while(k < 365):
+	k = 0
+	while(k < 365):
 # your code goes here  #########################
-    if(ft[k] >= 2) :
-        success = success + 1
-k = k+1
+		if(ft[k] >= 2) :
+			success = success + 1
+		k = k+1
 
 c = c+1
 
