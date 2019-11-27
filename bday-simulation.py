@@ -23,7 +23,7 @@ while(c < 10000) :
 
 	k = 0
 	while(k < x):
-		b = math.floor(364*random.random())+1
+		b = math.floor(364*random.random()) + 1
 		ft[b] = ft[b] + 1
 		k = k + 1
 
