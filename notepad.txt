@@ -1,0 +1,5 @@
+2019-12-05 16:09:02
+testing via the mac terminal
+i believe everything is working
+let's check the notepad.txt file
+
